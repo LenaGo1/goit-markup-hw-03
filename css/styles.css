@@ -36,6 +36,7 @@ body {
 }
 .page-header .container {
   padding: 25px 15px;
+  align-items: center;
 }
 .container {
   width: 1200px;
@@ -120,9 +121,18 @@ body {
   color: var(--accent-color);
 }
 /* hero */
+.hero {
+  background-color: var(--primary-text-color);
+}
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 .hero-title {
   color: var(--second-accent-color);
-  background-color: var(--primary-text-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -149,16 +159,11 @@ body {
   padding: 10px 32px;
   border: 1px solid transparent;
   border-radius: 4px;
-
-  /* margin-right: auto;
-  margin-left: auto; */
-  /* vertical-align: middle; */
 }
-
-/* .auth-nav .button {
-  background-color: var(--second-background-color);
+/* .hero .container .button {
+  margin-right: auto;
+  margin-left: auto;
 } */
-
 /* features */
 .title {
   color: var(--second-text-color);
@@ -172,6 +177,9 @@ body {
 .hidden-caption {
   display: none;
 }
+.section.features {
+  padding-bottom: 0;
+}
 .feature {
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
@@ -180,19 +188,30 @@ body {
   margin-right: 0;
 }
 .feature-image {
-  margin-left: auto;
+  background-color: var(--second-background-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.svg-image {
+  display: block;
   margin-right: auto;
+  margin-left: auto;
 }
 .feature-title {
-  margin: 0 0 10px;
+  margin: 30px 0 10px;
 }
 .feature-description {
   margin: 0;
 }
-/* .features .title {
-  color: var(--second-text-color);
-} */
+
 /* work */
+.work-item {
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
 .section-title {
   color: var(--second-text-color);
 
@@ -212,7 +231,9 @@ body {
   text-transform: uppercase;
 }
 /* team */
-
+.section.team {
+  background-color: var(--second-background-color);
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -303,6 +324,29 @@ p .position {
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+/* Customers*/
+.customers .customer-item {
+  width: calc((100% - 5 * 30px) / 6);
+  margin-right: 30px;
+  text-align: center;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.customers .customer-item:last-child {
+  margin-right: 0;
+}
+.customer-item .customer-logo {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
 }
 /* footer */
 
