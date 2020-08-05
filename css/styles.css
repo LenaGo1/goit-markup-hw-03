@@ -13,7 +13,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
   color: var(--primary-text-color);
@@ -113,12 +113,11 @@ body {
   color: var(--accent-color);
 }
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ECECEC;
-    margin: 0;
-   
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ececec;
+  margin: 0;
 }
 /* hero */
 .hero {
@@ -457,7 +456,7 @@ p .position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  lette r-spacing: 0.03em;
+  letter-spacing: 0.03em;
   margin: 0;
 }
 .link {
@@ -472,7 +471,7 @@ p .position {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
