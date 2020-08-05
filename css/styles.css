@@ -13,7 +13,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 body {
   color: var(--primary-text-color);
@@ -112,17 +112,26 @@ body {
 .contacts:focus {
   color: var(--accent-color);
 }
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ECECEC;
+    margin: 0;
+   
+}
 /* hero */
 .hero {
   background-color: var(--primary-text-color);
-}
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.hero .container {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
+
 .hero-title {
   color: var(--second-accent-color);
 
@@ -239,6 +248,8 @@ body {
   padding-right: 32px;
   padding-bottom: 24px;
   padding-left: 32px;
+  background-color: var(--primary-background-color);
+  border-radius: 0px 0px 4px 4px;
   /* vertical-align: middle; */
 
   /* display: inline-block; */
@@ -309,6 +320,7 @@ p .position {
 .appeal {
   margin-bottom: 20px;
   display: block;
+  color: var(--second-accent-color);
 }
 .contact {
   display: block;
@@ -434,7 +446,7 @@ p .position {
 .portfolio-title {
   color: var(--second-text-color);
 
-  font-weight: 300;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -445,7 +457,7 @@ p .position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
+  lette r-spacing: 0.03em;
   margin: 0;
 }
 .link {
@@ -460,6 +472,7 @@ p .position {
   width: calc((100% - 2 * 30px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
